@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EBECEE;
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    background-color: #007BFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.opções {
+    list-style-type: none;
+    padding: 0;
+}
+
+.opções__botão {
+    display: none; /* Esconde o checkbox */
+}
+
+.opções__item {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007BFF;
+}
+
+.lista-menu {
+    display: none; /* Esconde a lista de categorias */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.opções__botão:checked + label + .lista-menu {
+    display: block; /* Exibe a lista quando o checkbox está marcado */
+}
+
+.lista-menu__item {
+    background-color: #0056b3; /* Cor de fundo para itens da lista */
+}
+
+.lista-menu__link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+}
+
+.lista-menu__link:hover {
+    background-color: #004494; /* Muda a cor ao passar o mouse */
+}
